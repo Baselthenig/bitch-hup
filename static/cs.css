@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{ 
+height:50vh;
+background: url(/static/img/home_bg.jpeg) center center/cover no-repeat;
+position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.logo img{
+    width: 450px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 10px;
+
+}
+
+.logo-text{
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    color:orange;
+}
+
+.hub{
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    color:black;
+}
+
+.nav{
+    border-radius: 30px;
+    border: 2px solid orange;
+    padding: 5px 10px;
+   display: flex;
+   justify-content: center;
+}   
+ 
+.nav ol{
+    display: flex;
+    justify-content: center;
+}
+.nav ol li{
+    list-style: none;
+    margin: 20px 20px;
+}
+
+.nav ol li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav ol li a:hover{
+    color: orange;
+    transition: 1s;
+}
+
+#ms{
+    background-color: purple;
+    height: 100vh;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.bitch-booking-form{
+    display: flex;
+    border-radius: 15px;
+    gap: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#mi{
+    background-color: blue;
+    height: 100vh;
+}
+
+#m{
+    background-color: grey;
+    height: 100vh;
+}
+
+#mazen{
+    background-color: green;
+    height: 100vh;
+}
