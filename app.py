@@ -12,8 +12,9 @@ def book():
     email = data['email']
     phone = data['phone']
     date = data ['date']
+    bitch = data['bitch']
     con = sqlite3.connect('bookings.db')
-    con.cursor().execute(' INSERT INTO bookings(name,email,phone,date) VALUES (?,?,?,?)',(name,email,phone,date))
+    con.cursor().execute(' INSERT INTO bookings(name,email,phone,date,bitch) VALUES (?,?,?,?,?)',(name,email,phone,date,bitch))
     con.commit()
     con.close()
 
@@ -21,7 +22,7 @@ def book():
 
 def init_db():
   con = sqlite3.connect('bookings.db')
-  con.cursor().execute("create table if not exists bookings (id integer primary key autoincrement,name text not null, email text not null, phone integer not null, date text not null)")
+  con.cursor().execute("create table if not exists bookings (id integer primary key autoincrement,name text not null, email text not null, phone integer not null, date text not null,bitch text not null)")
   con.commit()
   con.close()
 
